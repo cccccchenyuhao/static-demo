@@ -1,0 +1,480 @@
+/* 第一页 header */
+html,
+body,
+header {
+    height: 100%;
+}
+
+header {
+    min-width: 880px;
+    min-height: 430px;
+    position: relative;
+    text-align: center;
+    background: #fff url(../img/header-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    float: left;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 40px;
+}
+
+.navbar {
+    float: right;
+    padding: 40px;   
+}
+
+.navbar > li {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #000;
+    font-size: 1.5em;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background-color: #2881ff;
+}
+
+.header-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.header-detail > h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+.header-detail > h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    margin-top: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2881ff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #2881ff;
+}
+
+/* 第二页 section-services */
+.serv {
+    text-align: center;
+    min-width: 900px;
+    height: 100%;
+    color: #777;
+}
+
+.serv::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.serv-wrap {
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-wrap {
+    width: 33.33%;
+    padding: 20px;
+    float: left;
+}
+
+.serv .iconfont {
+    display: inline-block;
+    padding: 30px;
+    border-radius: 200px;
+    background-color: #2881ff;
+    font-size: 50px;
+    color: #fff;
+}
+
+.icon::before {
+    color: #fff;
+}
+
+.serv-wrap > h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.serv-wrap > p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+
+.serv-item h4 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.serv-item p {
+    padding: 10px 20px;
+}
+
+.serv-item {
+    margin-top: 90px;
+}
+
+/* 第三页 portfolio */
+.port {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.port-wrap {
+    width: 1000px;
+    padding: 160px 0;
+    margin: 0 auto;
+}
+
+.port-wrap > h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.port-wrap > p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+
+.item-ct {
+    width: 100%;
+    margin-left: -20px;
+}
+
+.item-ct figure {
+    width: calc(33.33% - 40px);
+    float: left;
+ 
+    margin: 20px;
+    background-color: #fff;
+}
+.item-ct > figure > a {
+    display: block;
+    height: 230px;
+    width: 100%;
+    background-color: #000;
+}
+.item-ct > figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-caption h4 {
+    padding: 6px;
+}
+.item-caption p {
+    font-style: italic;
+    padding: 6px;
+    color: #333;
+}
+
+.serv-wrap > h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.serv-wrap > p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+
+/* 第四页 */
+.container {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 160px 0;
+}
+.about .container > h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.about .container > p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+.timeline {
+    margin-top: 90px;
+}
+
+.timeline li {
+    margin-top: 60px;
+    margin-right: calc(50% - 50px);
+    position: relative;
+}
+.timeline li::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 130px;
+    position: absolute;
+    background-color:lightblue;
+    right: 50px;
+    top: 100px;
+}
+.timeline li:nth-child(even)::before {
+    top: 100px;
+    left: 50px;
+}
+.timeline li:nth-child(even) {
+    margin-left: calc(50% - 50px);
+    margin-right: 0;
+}
+
+
+.timeline img,
+.timeline .timeline-last {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+}
+.timeline li:nth-child(even) img{
+    float: left;
+}
+
+.timeline-intro {
+    text-align: right;
+    margin-top: 20px;
+}
+.timeline li:nth-child(even) .timeline-intro {
+    text-align: left;
+}
+
+.timeline-intro dl {
+    margin-right: 120px;
+}
+.timeline li:nth-child(even) .timeline-intro {
+    margin-right: 0;
+    margin-left: 120px;
+}
+
+
+.timeline .timeline-last  p {
+    position: absolute;
+    top: 26px;
+    left: 0;
+}
+.timeline .timeline-last {
+    position: relative;
+    color: #fff;
+    background-color: orange;
+}
+
+.timeline > li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.timeline li:nth-child(5)::before {
+    display: none;
+}
+
+.timeline dl > dt {
+    font-weight: bold;
+}
+.timeline dl > dd:first-of-type {
+    color: #333;
+    font-style: italic;
+    padding-top: 4px;
+}
+.timeline dl > dd:nth-child(3) {
+    color: #000;
+    padding-top: 8px;
+}
+
+/* 第四页 our amazing team */
+.team {
+    background-color: #f7f7f7;
+}
+.layout {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 160px 0;
+}
+.layout > h2 {
+    font-size: 40px;
+    color: #000;
+}
+.layout > p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+}
+
+.team li {
+    float: left;
+    width: calc(33.33% - 20px);
+    margin-left: 20px;
+}
+.memb-ct {
+    margin-left: -20px;
+    margin-top: 40px;
+}
+
+.memb-ct li > img {
+    border-radius: 50%;
+    border: 6px solid #fff;
+    width: 80%;
+    
+}
+.memb-ct h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.memb-ct p {
+    color: #333;
+    font-style: italic;
+    margin-top: 4px;
+}
+.memb-ct .iconfont {
+    display: inline-block;
+    font-size: 2em;
+    color: #000;
+    margin: 20px 10px;
+}
+.memb-ct a:hover .iconfont {
+    color: #2881ff;
+}
+.team .memb-text {
+    margin-top: 24px;
+}
+
+
+aside {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+aside > div {
+    padding: 40px 0;
+}
+aside img {
+    margin-left: 60px;
+}
+
+.contact {
+    background: #000 url(../img/map-image.png) center/cover no-repeat;
+}
+.contact .layout {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 160px 0;
+}
+.contact h2 {
+    font-size: 40px;
+    color: #fff;
+}
+.contact p {
+    font-style: italic;
+    padding: 10px 20px;
+    margin-top: 4px;
+    color: #777;
+}
+
+
+.contact .input {
+    width: 50%;
+    float: left;
+    height: 300px;
+}
+.input input {
+    display: block;
+    width: 80%;
+    margin: 0 auto 25px;
+    padding: 20px;
+}
+
+.contact .textarea {
+    width: 50%;
+    float: right;
+}
+.contact textarea {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+}
+.contact form {
+margin-top: 30px;
+}
+
+.contact .layout > input {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2881ff;
+    padding: 20px 40px;
+    border-radius: 4px;
+}
+
+footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+footer > div {
+    padding: 20px 0;
+        vertical-align: text-bottom;
+}
+
+footer ul {
+    float: right;
+}
+footer li {
+    float: right;
+    margin-right: 10px;
+}
+footer li a {
+    color: #333;
+      padding: 6px;
+}
+footer li a:hover {
+    background-color: #2881ff;
+    color: #fff;
+  
+}
+footer small {
+    float: left;
+    margin-left: 10px;
+}
+
+footer .icon {
+    text-align: center;
+}
+footer .iconfont {
+    font-size: 1.5em;
+}
